@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<!--    <color name="colorPrimary">#008577</color>-->
+<!--    <color name="colorPrimaryDark">#00574B</color>-->
+<!--    <color name="colorAccent">#D81B60</color>-->
+    <color name="colorPrimary"> #1c2833</color>
+    <color name="colorPrimaryDark">  #1c2833 </color>
+    <color name="colorAccent">#e67e22</color>
+<!--    #D81B60-->
+    <color name="colorText">#ffffff</color>
+    <color name="hamcolor">#e67e22</color>
+    <color name="titlecolor"> #f5b041</color>
+
+    <color name="primaryactivityColor"> #a93226 </color>
+    <color name="secondaryactivityColor"> #a93226 </color>
+
+    <color name="colorOrange">#FF7F50</color>
+    <color name="colorOrangeDark">#FF4500</color>
+    <color name="colorWhite">#FDFDFC</color>
+
+</resources>

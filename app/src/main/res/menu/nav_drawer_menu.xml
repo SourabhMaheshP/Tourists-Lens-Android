@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view"
+    >
+
+    <group android:checkableBehavior="single"
+        >
+        <item
+            android:id="@+id/gallery"
+            android:title="My Gallery"
+            android:icon="@drawable/gallery"
+            />
+        <item
+            android:id="@+id/monument_facts"
+            android:title="Monument Facts"
+            android:icon="@drawable/facts"
+            />
+        <item
+            android:id="@+id/contactus"
+            android:icon="@drawable/phone2"
+            android:title="Contact Us" />
+        <item
+            android:id="@+id/visited_place"
+            android:title="Must Visit Places"
+            android:icon="@drawable/must_visit"/>
+
+    </group>
+    <item android:title="Account">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/backups"
+                    android:title="Backups"
+                    android:icon="@drawable/backup"/>
+            </group>
+                <item
+                    android:id="@+id/logout"
+                    android:icon="@drawable/logout"
+                    android:title="Logout" />
+                <item
+                    android:id="@+id/acc_signin"
+                    android:icon="@drawable/vector_account"
+                    android:title="Sign In" />
+
+        </menu>
+    </item>
+
+</menu>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fef5e7">
+<!--    <FrameLayout-->
+<!--        android:id="@+id/facts_framelayout"-->
+<!--        android:layout_height="400dp"-->
+<!--        android:layout_width="match_parent"-->
+<!--        />-->
+
+       <androidx.core.widget.NestedScrollView
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           app:layout_behavior="@string/appbar_scrolling_view_behavior"
+           android:background="#fef5e7"
+           android:elevation="5dp"
+           android:layout_marginEnd="5dp"
+           android:layout_marginStart="5dp"
+           android:layout_marginBottom="5dp"
+           >
+       <TextView
+           android:id="@+id/factsinfo"
+           android:layout_height="wrap_content"
+           android:layout_width="wrap_content"
+           android:textSize="16sp"
+           android:text="Facts"
+           android:paddingTop="15dp"
+           android:paddingBottom="10dp"
+           android:paddingLeft="10dp"
+           android:paddingRight="10dp"
+           android:textColor="#922b21"
+           android:alpha="0.8"
+           />
+       </androidx.core.widget.NestedScrollView>
+</LinearLayout>

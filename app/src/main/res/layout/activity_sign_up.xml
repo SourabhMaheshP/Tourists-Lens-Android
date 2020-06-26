@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".SignUpActivity"
+    android:orientation="vertical"
+    android:background="#fef5e7"
+    >
+
+    <include
+        android:id="@+id/custom_toolbar"
+        layout="@layout/toolbar"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="43dp"
+        android:layout_marginTop="20dp"
+        android:text="Create an account"
+        android:layout_gravity="center"
+        android:fontFamily="@font/bebasregular"
+        android:textColor=" #a04000 "
+        android:textSize="30sp" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="20dp" />
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/name_layout"
+        style="@style/LoginTextInputLayoutStyle"
+        android:layout_width="290dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        app:helperText="Ex. John Doe"
+        >
+
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="290dp"
+            android:layout_height="wrap_content"
+            android:hint="Full Name"
+            android:drawableRight="@drawable/vector_account"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="15dp" />
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/email_layout"
+        style="@style/LoginTextInputLayoutStyle"
+        android:layout_width="290dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        app:helperText="Ex. abc@gmail.com"
+
+        >
+
+        <EditText
+            android:id="@+id/email"
+            android:focusable="true"
+            android:layout_width="290dp"
+            android:layout_height="wrap_content"
+            android:hint="Email"
+            android:drawableRight="@drawable/vector_email"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="10dp" />
+        >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="36dp"
+        android:text="Country"
+        android:textSize="18sp" />
+        <Spinner
+            android:id="@+id/country"
+            android:layout_marginLeft="36dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="10dp" />
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/password_layout"
+        style="@style/LoginTextInputLayoutStyle"
+        android:layout_width="290dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        app:passwordToggleEnabled="true"
+        app:helperText="Make sure it's at least 6 characters."
+        >
+
+        <EditText
+            android:id="@+id/password"
+            android:maxLength="15"
+            android:focusable="true"
+            android:layout_width="290dp"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            android:inputType="textPassword"
+
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="15dp" />
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/confirm_password_layout"
+        style="@style/LoginTextInputLayoutStyle"
+        android:layout_width="290dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        app:passwordToggleEnabled="true"
+        >
+
+        <EditText
+            android:id="@+id/confirm_password"
+            android:focusable="true"
+            android:maxLength="15"
+            android:layout_width="290dp"
+            android:layout_height="wrap_content"
+            android:hint="Confirm password"
+            android:inputType="textPassword"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="25dp" />
+
+    <Button
+        android:id="@+id/register"
+        android:background="@drawable/rounded_border"
+        android:layout_width="290dp"
+        android:layout_height="47dp"
+        android:backgroundTint="#e67e22"
+        android:fontFamily="sans-serif-medium"
+        android:text="Sign Up"
+        android:textColor="#ffffff"
+        android:textSize="16sp"
+        android:layout_gravity="center"
+        />
+</LinearLayout>

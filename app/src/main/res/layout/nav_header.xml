@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="180dp"
+    android:background="@drawable/login_gradient"
+    android:paddingTop="16dp"
+    android:paddingLeft="5dp"
+    android:paddingRight="10dp"
+    >
+
+    <ImageView
+        android:id="@+id/dp"
+        android:layout_marginLeft="5dp"
+        android:layout_width="116dp"
+        android:layout_height="99dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="7dp"
+        android:src="@mipmap/account_icon"
+        />
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="1.5dp"
+        android:background="#b3b6b7"
+        android:layout_gravity="center"
+        android:layout_marginBottom="1.5dp"
+        android:alpha="0.6"
+        />
+
+    <TextView
+        android:id="@+id/greeting_name"
+        android:layout_marginLeft="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="16dp"
+        android:layout_gravity="left"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="5dp"
+        android:fontFamily="@font/bebasbold"
+        android:text="TextView"
+        android:textColor=" #fef9e7 "
+        android:textSize="16dp" />
+
+    <TextView
+        android:id="@+id/greeting_email"
+        android:layout_width="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_height="22dp"
+        android:layout_gravity="left"
+        android:text="Example@xyz.com"
+        android:textStyle="bold"
+        android:textColor=" #fef9e7 "
+        android:fontFamily="sans-serif-condensed-light"
+        android:textSize="12dp"
+        />
+
+</LinearLayout>

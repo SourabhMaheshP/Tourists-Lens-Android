@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/facts_cardview"
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:layout_marginBottom="60dp"
+        android:elevation="5dp"
+        app:cardCornerRadius="15dp"
+        app:cardUseCompatPadding="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        android:backgroundTint=" #f5b041 "
+
+        >
+
+
+        <ImageView
+            android:id="@+id/facts_image"
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/no_image"
+            android:tint="#6F000000"
+            android:alpha="0.95"
+            />
+
+        <TextView
+            android:id="@+id/facts_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:alpha="1"
+            android:fontFamily="monospace"
+            android:gravity="center"
+            android:padding="20dp"
+            android:text="Label"
+            android:textColor="#ffffff"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:drawableRight="@drawable/right_cone"
+            />
+
+        <Button
+            android:id="@+id/geolocation"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:padding="2dp"
+            android:backgroundTint="#fdebd0"
+            android:text="visit this place"
+            android:layout_gravity="bottom|center"
+            android:textColor=" #b03a2e "
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            />
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

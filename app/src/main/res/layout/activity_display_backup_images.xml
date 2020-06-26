@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DisplayBackupImages"
+    android:background="#fef5e7"
+    >
+    <include
+        android:id="@+id/custom_toolbar6"
+        layout="@layout/toolbar"
+        />
+
+    <TextView
+        android:id="@+id/appgreeting"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#f8c471"
+        android:fontFamily="sans-serif-condensed"
+        android:paddingLeft="25dp"
+        android:paddingTop="10dp"
+        android:paddingRight="15dp"
+        android:paddingBottom="10dp"
+        android:text="Your Backup Images"
+        android:textColor=" #ffffff"
+        android:textSize="25sp"
+        android:textStyle="italic"
+        app:layout_constraintTop_toBottomOf="@+id/custom_toolbar6"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@+id/appgreeting"
+        tools:layout_editor_absoluteX="0dp">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/display_backup_img_rv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:scrollbars="vertical"
+            />
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
